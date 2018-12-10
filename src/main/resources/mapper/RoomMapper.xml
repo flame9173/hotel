@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hotel.Dao.RoomDao">
+    <select id="queryByNumber" resultType="Room" parameterType="int">
+        SELECT *
+        FROM rooms
+        WHERE rnumber=#{rnumber}
+    </select>
+
+    <update id="BookRoom">
+        update rooms
+        set idcard=#{idcard},customername=#{customername},customerphone=#{customerphone},rstatus=#{rstatus}
+        where rnumber=#{rnumber}
+    </update>
+
+    <update id="UseBookRoom">
+        update rooms
+        set discount=#{discount},rstatus=#{rstatus},starttime=#{starttime},endtime=#{endtime}
+        where rnumber=#{rnumber}
+    </update>
+
+    <update id="UseNoBookRoom">
+        update rooms
+        set idcard=#{idcard},customername=#{customername},customerphone=#{customerphone},starttime=#{starttime},endtime=#{endtime},rstatus=#{rstatus},discount=#{discount}
+        where rnumber=#{rnumber}
+    </update>
+
+    <update id="ContinueToLive">
+        update rooms
+        set endtime=#{endtime}
+        where rnumber=#{rnumber}
+    </update>
+
+    <select id="queryAll" resultType="Room">
+        SELECT *
+        FROM rooms
+    </select>
+
+    <select id="queryCanBeUsed" resultType="Room">
+        select *
+        from rooms
+        where rstatus=-1
+    </select>
+</mapper>

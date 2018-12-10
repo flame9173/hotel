@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hotel.Dao.CustomerDao">
+    <insert id="Register">
+        insert into customer(cname,phone,idcard,sex,age,roomnumber) values (#{cname},#{phone},#{idcard},#{sex},#{age},#{roomnumber})
+    </insert>
+
+    <delete id="Leave">
+        delete from customer where roomnumber=#{roomnumber}
+    </delete>
+
+    <update id="ChangeRoom">
+        update customer set roomnumber=#{roomnumber} where cname=#{cname}
+    </update>
+
+    <select id="queryByIdandName" resultType="Customer">
+        SELECT *
+        FROM customer
+        WHERE idcard=#{idcard} and cname=#{cname}
+    </select>
+
+    <select id="queryAll" resultType="Customer">
+        SELECT *
+        FROM customer
+    </select>
+</mapper>

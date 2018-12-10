@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Class-Path: hibernate-validator-6.0.12.Final.jar mybatis-spring-boot-s
+ tarter-1.3.2.jar classmate-1.3.4.jar HikariCP-2.7.9.jar log4j-api-2.1
+ 0.0.jar base64-2.3.8.jar spring-boot-starter-web-2.0.5.RELEASE.jar to
+ mcat-embed-core-8.5.34.jar jackson-databind-2.9.6.jar jconsole.jar sl
+ f4j-api-1.7.25.jar spring-boot-autoconfigure-2.0.5.RELEASE.jar jackso
+ n-datatype-jsr310-2.9.6.jar gson-2.6.2.jar jackson-datatype-jdk8-2.9.
+ 6.jar jackson-module-parameter-names-2.9.6.jar spring-boot-starter-js
+ on-2.0.5.RELEASE.jar spring-beans-5.0.9.RELEASE.jar spring-web-5.0.9.
+ RELEASE.jar tools.jar spring-webmvc-5.0.9.RELEASE.jar validation-api-
+ 2.0.1.Final.jar spring-boot-2.0.5.RELEASE.jar spring-core-5.0.9.RELEA
+ SE.jar spring-aop-5.0.9.RELEASE.jar mybatis-spring-boot-autoconfigure
+ -1.3.2.jar mysql-connector-java-5.1.47.jar javax.annotation-api-1.3.2
+ .jar log4j-to-slf4j-2.10.0.jar tomcat-embed-websocket-8.5.34.jar tomc
+ at-embed-el-8.5.34.jar mybatis-3.4.6.jar spring-jdbc-5.0.9.RELEASE.ja
+ r spring-boot-starter-logging-2.0.5.RELEASE.jar mybatis-spring-1.3.2.
+ jar fastjson-1.2.47.jar logback-core-1.2.3.jar snakeyaml-1.19.jar spr
+ ing-context-5.0.9.RELEASE.jar spring-jcl-5.0.9.RELEASE.jar spring-tx-
+ 5.0.9.RELEASE.jar jackson-annotations-2.9.0.jar logback-classic-1.2.3
+ .jar spring-boot-starter-jdbc-2.0.5.RELEASE.jar spring-boot-starter-2
+ .0.5.RELEASE.jar jboss-logging-3.3.2.Final.jar druid-1.1.0.jar jul-to
+ -slf4j-1.7.25.jar spring-expression-5.0.9.RELEASE.jar spring-boot-sta
+ rter-tomcat-2.0.5.RELEASE.jar jackson-core-2.9.6.jar
+Main-Class: com.hotel.HotelApplication
+
